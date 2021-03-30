@@ -68,7 +68,8 @@ function uglify() {
         'Version 0.11.1',
         'Full source at https://github.com/harvesthq/chosen',
 
-        'Underscore.js 1.8.3'
+        'Underscore.js 1.8.3',
+        'Underscore.js 1.12.1'
       ];
 
       const isException = exceptions.some(exception => {
