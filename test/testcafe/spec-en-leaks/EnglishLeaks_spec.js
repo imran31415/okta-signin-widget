@@ -92,6 +92,9 @@ const setUpResponse = (filePath) => {
 async function setup(t, locale) {
   const widgetView = new PageObject(t);
   await widgetView.navigateToPage();
+  await widgetView.preventRedirect([
+    'http://localhost:3000/error.html'
+  ]);
   await renderWidget({
     'language': locale
   });

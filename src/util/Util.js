@@ -28,6 +28,13 @@ const buildInputForParameter = function(name, value) {
   return input;
 };
 
+const buildSubmitInput = function() {
+  const input = document.createElement('input');
+  input.type = 'submit';
+  input.value = 'Submit';
+  return input;
+};
+
 const buildDynamicForm = function(url = '', method) {
   const splitOnFragment = url.split('#');
   const fragment = splitOnFragment[1];
@@ -54,6 +61,8 @@ const buildDynamicForm = function(url = '', method) {
       form.appendChild(input);
     });
   }
+  form.appendChild(buildSubmitInput());
+
   return form;
 };
 
@@ -196,7 +205,7 @@ Util.redirectWithForm = function(url, method = 'post') {
   const form = buildDynamicForm(url, method);
 
   mainContainer.appendChild(form);
-  form.submit();
+  form.querySelector('input[type="submit"]').click();
 };
 
 /**
