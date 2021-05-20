@@ -22,7 +22,6 @@ fixture('English Leaks')
 
 // These mocks have known english leaks ignoring them temporarily
 const ignoredMocks = [
-  'success-with-interaction-code.json',
   'identify-with-third-party-idps.json',
   'identify-with-no-sso-extension.json',
   'identify-with-device-probing-loopback.json',
