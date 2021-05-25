@@ -4,6 +4,7 @@ import { getBackToSignInLink, getSkipSetupLink, getReloadPageButtonLink } from '
 import EmailAuthenticatorHeader from '../components/EmailAuthenticatorHeader';
 
 const RETURN_LINK_EXPIRED_KEY = 'idx.return.link.expired';
+const IDX_SESSION_EXPIRED_KEY = 'idx.session.expired';
 const SAFE_MODE_KEY_PREFIX = 'idx.error.server.safe.mode';
 const UNLOCK_ACCOUNT_TERMINAL_KEY = 'oie.selfservice.unlock_user.success.message';
 const RETURN_TO_ORIGINAL_TAB_KEY = 'idx.return.to.original.tab';
@@ -30,6 +31,7 @@ const EMAIL_AUTHENTICATOR_TERMINAL_KEYS = [
 const GET_BACK_TO_SIGN_LINK_FLOWS = [
   RETURN_LINK_EXPIRED_KEY,
   REGISTRATION_NOT_ENABLED,
+  IDX_SESSION_EXPIRED_KEY
 ];
 
 const DEVICE_CODE_ERROR_KEYS = [
