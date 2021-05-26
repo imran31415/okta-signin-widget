@@ -139,6 +139,9 @@ const idx = {
   '/idp/idx/activate': [
     'identify-with-password',
     // 'error-invalid-device-code',
+  ],
+  '/idp/idx/authenticators/sso_extension/transactions/:transactionId/verify/cancel': [
+    'identify-with-no-sso-extension',
   ]
 };
 
