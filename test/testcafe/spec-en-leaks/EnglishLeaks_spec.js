@@ -21,7 +21,6 @@ const ignoredMocks = [
   'authenticator-verification-select-authenticator.json',
   'error-with-failure-redirect.json',
   'identify-recovery-with-recaptcha-v2.json',
-  'consent-enduser.json'
 ];
 
 const parseMockData = () => {
